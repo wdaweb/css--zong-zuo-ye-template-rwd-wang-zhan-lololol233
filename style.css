@@ -1,5 +1,6 @@
 :root{
   --color-dark: #272727;
+  --color-primary: #EFC4A3;
   --font-title: 'Teko', sans-serif;
   --font-secondary: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -20,6 +21,13 @@ h2{
   font-size: 2rem;
   letter-spacing: 2px;
   word-spacing: 4px;
+}
+
+h3{
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  word-spacing: 3px;
 }
 
 p{
@@ -60,15 +68,42 @@ header{
   width: 100%;
   text-align: center;
   color: white;
+  margin: 10px;
+  padding: 2rem;
 }
 .shopnow2{
   background-image: url(./images/bg-cta-3.jpg);
   /* width: 100%; */
   text-align: center;
   color: white;
+  margin: 10px;
+  padding: 2rem;
 }
 footer{
   background-color: var(--color-dark);
   color: white;
 
+}
+
+/* 按钮 */
+.btn{
+  width: 10rem;
+  height: 3.75rem;
+  border-radius: 1px;
+  font-size: 1.5rem;
+  font-family: var(--font-title);
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-weight:600;
+  background-color: var(--color-primary);
+  border: 0;
+  color: white;
+}
+
+.btn:hover{
+  background-color: var(--color-dark);
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.8s;
+  transition-delay: 0.2s;
 }
