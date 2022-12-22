@@ -113,6 +113,26 @@ header{
   padding: 2rem;
 }
 
+.box-ad-all{
+  width: 100%;
+  margin: 3rem 0; 
+  display: flex;
+  justify-content: center;
+}
+
+.box-ad{
+  border: 1px solid black;
+  width: 15rem;
+  padding: 3rem;
+  margin: 0 2rem;
+}
+
+.box-ad:hover{
+  background-color: var(--color-primary);
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+}
 
 /* 按钮 */
 .btn{
