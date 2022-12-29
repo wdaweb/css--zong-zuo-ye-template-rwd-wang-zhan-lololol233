@@ -2,15 +2,21 @@
   --color-dark: #272727;
   --color-primary: #EFC4A3;
   --color-secondary: #F4F4F4;
+  --color-third: #976f55;
   --font-title: 'Teko', sans-serif;
-  --font-secondary: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-secondary: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue";
 }
 
 *{
   margin:0;
   padding: 0;
   text-align: center;
+  font-family: var(--font-secondary);
 }
+/* body{
+  width: 100vw;
+  overflow-x: hidden;
+} */
 
 h1{
   font-family: var(--font-title);
@@ -83,6 +89,32 @@ header{
   margin: 1rem;
 }
 
+.box h2{
+  text-align: left;
+  display: block;
+  border: 1px solid gray;
+  border-top: none;
+  padding-left: 5px;
+}
+
+.box:hover{
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  cursor: pointer;
+  /* letter-spacing: 5px; */
+  transition: all 0.5s ease-out;
+}
+
+.box h2::after{
+  content: '➡';
+  font-family: var(--font-secondary);
+  text-align: right;
+}
+
+/* .box h2::after:hover{
+  margin-left: 50px;
+} */
+
 .first-line{
   display: flex;
   /* width: 100vw; */
@@ -91,24 +123,35 @@ header{
 }
 
 .comment-card{
-  width: 48rem;
+  width: 70vw;
   box-sizing: border-box;
-  border: 1px solid rgb(190, 190, 190);
+  box-shadow:2px 2px 3px 3px #e4e4ea;
 }
-
+.comment-card img{
+  border-radius: 50%;
+  margin: 2rem 0;
+}
+.comment-card p{
+  text-align: left;
+  margin: 0 5rem 2rem 5rem;
+}
 .shopnow{
   background-image: url(./images/bg-cta-2.jpg);
   width: 100%;
   text-align: center;
-  color: white;
+  color: var(--color-secondary);
   margin: 1rem;
   padding: 2rem;
+}
+.shopnow p,
+.shopnow2 p{
+  margin: 2rem 0;
 }
 .shopnow2{
   background-image: url(./images/bg-cta-3.jpg);
   /* width: 100%; */
   text-align: center;
-  color: white;
+  color: var(--color-secondary);
   margin: 1rem;
   padding: 2rem;
 }
@@ -120,8 +163,17 @@ header{
   justify-content: center;
 }
 
+@media (max-width: 576px){
+  .box-ad-all{
+    flex-wrap: wrap;
+  }
+  .box-ad{
+    margin: 2rem 0;
+  }
+}
+
 .box-ad{
-  border: 1px solid black;
+  border: 0.5px solid #9B9BAB;
   width: 15rem;
   padding: 3rem;
   margin: 0 2rem;
@@ -129,9 +181,12 @@ header{
 
 .box-ad:hover{
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-secondary);
   cursor: pointer;
-  border: 1px solid white;
+  border: 1px solid var(--color-secondary);
+  transition-property: background-color color;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
 }
 
 /* 按钮 */
@@ -146,7 +201,7 @@ header{
   font-weight:600;
   background-color: var(--color-primary);
   border: 0;
-  color: white;
+  color: var(--color-secondary);
 }
 
 .btn:hover{
@@ -169,9 +224,32 @@ header{
   
 }
 
+.partner img{
+  border: 0.5px solid rgb(173, 173, 173);
+  margin: 1rem;
+  width: 270px;
+  height: 145px;
+  overflow: hidden;
+  object-fit: cover;
+  transform:scale(1,1);
+  /* transition: all 1s ease-out; */
+}
+
+
+.partner img:hover{
+  border-color: var(--color-primary);
+  cursor: pointer;
+  transition-property: border-color;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+  transform: scale(0.9, 0.9);
+  overflow: hidden;
+  filter:opacity(.5);
+}
+
 footer{
   background-color: var(--color-dark);
-  color: white;
+  color: var(--color-secondary);
   width: 100%;
   height: 25rem;
   display: flex;
@@ -221,4 +299,79 @@ footer{
   margin: 0.5rem;
   width: 7.5rem;
   height: 7.5rem;
+}
+
+.right .box:hover{
+  filter:brightness(.8);
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+
+/* 懸浮出現元素效果 */
+.box img:hover{
+  filter:brightness(.7);
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+
+/* 装饰线 */
+.title{
+  margin: 4rem 0 0 3rem;
+}
+.title::after{
+
+  content: '';
+  width: 40%;
+  height: 1px;
+  background-color: lightgray;
+  position: absolute;
+  margin-top: 10px;
+  right: 2rem;
+}
+.title::before{
+  content: '';
+  width: 45vw;
+  height: 1px;
+  background-color: lightgray;
+  position: absolute;
+  margin-top: 10px;
+  left: 1rem;
+}
+
+.popular-product .box{
+  background-color: var(--color-secondary);
+  color: var(--color-third);
+  font-family: var(--font-title);
+}
+.popular-product .box h3{
+  color: var(--color-dark);
+}
+.popular-product .box:hover .btn2{
+  display: block;
+  opacity: 1;
+
+}
+
+.btn2{
+  width: 8rem;
+  height: 3rem;
+  /* border: 0; */
+  font-size: 1.5rem;
+  font-family: var(--font-title);
+  opacity: 0;
+  position: absolute;
+  transform: translate(70px,-160px);
+  margin: 0;
+}
+.btn2:hover{
+  background-color: var(--color-primary);
+  color:var(--color-secondary);
+  border: 0;
+  cursor: pointer;
+}
+
+/* 评价盒子 */
+.comment-card{
+
 }
