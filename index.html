@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.css' integrity='sha512-jxGmKjC/OykrTklkNK2NgnhNtKtUAADFY+rvSi3nA7dbaPRfjrSXYxHqX8iq5N6WTOntqEQZrEwW3L84sirfKQ==' crossorigin='anonymous'/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet" />
@@ -23,11 +24,35 @@
         <li>PAGES</li>
         <li></li>
       </ul>
-      <div class="slide">
-        <h1>PROFESSIONALS YOU CAN RELY ON</h1>
-        <p>Let our professional team design the floor of your dreams today.</p>
-        <button class="btn">SHOP NOW</button>
+<!-- 
+      轮播图 -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide"><img src="./images/photos/slide-1-1920x850.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/photos/slide-2-1920x850.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./images/photos/slide-3-1920x850.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+          <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+    <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
       </div>
+      <!-- <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">        
+            <h1>PROFESSIONALS YOU CAN RELY ON</h1>
+            <p>Let our professional team design the floor of your dreams today.</p>
+            <button class="btn">SHOP NOW</button>
+          </div>
+          <div class="swiper-slide"></div>
+          <div class="swiper-slide"></div>
+        </div>
+
+      </div> -->
     </header>
     <hr />
     <!-- what we offer -->
@@ -60,76 +85,87 @@
     </div>
     <!-- trending product -->
     <h3 class="title">TRENDING PRODUCTS</h3>
-    <div class="first-line left">
+    <div class="first-line">
       <img src="./images/photos/image-map-1-570x715.jpg" alt="" />
       <div class="right">
-        <div class="box">
+        <div class="box box-add">
           <img src="./images/product-17-270x280.png" alt="" />
+          <button class="btn2">ADD CART</button>
           <h3>CARRARA MARBLE</h3>
           <p>
             $400.00
             <del>$500.00</del>
           </p>
         </div>
-        <div class="box">
+        <div class="box box-add">
           <img src="./images/product-14-270x280.png" alt="" />
+          <button class="btn2">ADD CART</button>
           <h3>POLISHED MARBLE</h3>
           <p>$150.00</p>
         </div>
-        <div class="box">
+        <div class="box box-add">
           <img src="./images/product-15-270x280.png" alt="" />
+          <button class="btn2">ADD CART</button>
           <h3>BASTILLE GRAY</h3>
           <p>$520.00</p>
         </div>
-        <div class="box">
+        <div class="box box-add">
           <img src="./images/product-16-270x280.png" alt="" />
+          <button class="btn2">ADD CART</button>
           <h3>BAYCLIFF CAULFEILD</h3>
           <p>$350.00</p>
         </div>
       </div>
     </div>
+<!-- box -->
+<div class="box-ad-all">
+  <div class="box-ad">
+    <h3>FREE WORLDWIDE DELIVERY</h3>
+    When ordering from $300
+  </div>
+  <div class="box-ad">
+    <h3>HIGH-QUALITY PRODUCTS</h3>
+    Award-winning flooring
+  </div>
+  <div class="box-ad">
+    <h3>-20% ON NEW COLLECTIONS</h3>
+    Get your discount today!
+  </div>
+</div>
 
-    <div class="box-ad-all">
-      <div class="box-ad">
-        <h3>FREE WORLDWIDE DELIVERY</h3>
-        When ordering from $300
-      </div>
-      <div class="box-ad">
-        <h3>HIGH-QUALITY PRODUCTS</h3>
-        Award-winning flooring
-      </div>
-      <div class="box-ad">
-        <h3>-20% ON NEW COLLECTIONS</h3>
-        Get your discount today!
-      </div>
-    </div>
     <!-- flooring project -->
     <h3 class="title">BEST FLOORING PROJECTS</h3>
     <div class="card">
       <div class="first-line">
-        <div class="box">
+        <div class="box box-tab">
           <img src="./images/photos/grid-gallery-1-370x303.jpg" alt="" />
+          <button class="btn3">609 MADISON AVE</button>
         </div>
-        <div class="box">
+        <div class="box box-tab">
           <img src="./images/photos/grid-gallery-2-370x303.jpg" alt="" />
+          <button class="btn3">609 MADISON AVE</button>
         </div>
-        <div class="box">
+        <div class="box box-tab">
           <img src="./images/photos/grid-gallery-3-370x303.jpg" alt="" />
+          <button class="btn3">609 MADISON AVE</button>
         </div>
       </div>
 
       <div class="first-line">
-        <div class="box">
+        <div class="box box-tab">
           <img src="./images/photos/grid-gallery-4-370x303.jpg" alt="" />
+          <button class="btn3">609 MADISON AVE</button>
         </div>
-        <div class="box">
+        <div class="box box-tab">
           <img src="./images/photos/grid-gallery-5-370x303.jpg" alt="" />
+          <button class="btn3">609 MADISON AVE</button>
         </div>
-        <div class="box">
+        <div class="box box-tab">
           <img src="./images/photos/grid-gallery-6-370x303.jpg" alt="" />
+          <button class="btn3">609 MADISON AVE</button>
         </div>
       </div>
-    </div>
+    </div>                                                                 
 
     <div class="shopnow">
       <h1>
@@ -214,9 +250,24 @@
     <!-- latest posts -->
     <h3 class="title">LATEST POSTS</h3>
     <div class="first-line">
-      <img src="./images/photos/post-18-370x267.jpg" alt="" />
-      <img src="./images/photos/post-16-370x267.jpg" alt="" />
-      <img src="./images/photos/post-17-370x267.jpg" alt="" />
+      <div class="box-lastpost">
+        <img src="./images/./user-4-49x49.jpg" alt="" />
+        <span>BY MARY LEE MAY 17, 2022</span>
+        <img class="box-image" src="./images/photos/post-18-370x267.jpg" alt="" />
+        <h3>FLOORING PRO’S SECRETS THAT CAN RAISE YOUR HOME VALUE</h3>
+      </div>
+      <div class="box-lastpost">
+        <img src="./images/user-5-49x49.jpg" alt="" />
+        <span>BY RUPERT WOOD MAY 04, 2022</span>
+        <img class="box-image" src="./images/photos/post-16-370x267.jpg" alt="" />
+        <h3>BEST LAMINATE & HARDWOOD FLOORING TRENDS FOR 2022</h3>
+      </div>
+      <div class="box-lastpost">
+        <img src="./images/user-6-49x49.jpg" alt="" />
+        <span>BY ANN ANDERSON MAY 17, 2022</span>
+        <img class="box-image" src="./images/photos/post-17-370x267.jpg" alt="" />
+        <h3>HOW TO PICK FLOORS / CARPET & GET THE BEST DEALS</h3>
+      </div>
     </div>
     <div class="shopnow2">
       <h1>READY FOR A NEW EXPERIENCE?</h1>
@@ -236,7 +287,8 @@
     <footer>
       <div class="left">
         <img src="./images/logos/logo-inverse-2-149x46.png" alt="" />
-        <p>We are an industry-leading flooring products and services provider. Let’s make your floor look spectacular!</p>
+        <p class="intro">We are an industry-leading flooring products and services provider. Let’s make your floor look spectacular!</p>
+        <hr />
         <p>+1 323-913-4688</p>
         <p>Mon-Sat: 07:00AM - 05:00PM</p>
         <p>4730 Crystal Springs Dr, Los Angeles, CA 90027</p>
@@ -244,11 +296,13 @@
       <div class="center">
         <h3>NEWSLETTER</h3>
         <p>Join our email list for tips and useful information.</p>
-        <button class="btn">Emter Your E-Mail</button>
+        <input placeholder="Emter Your E-Mail"></input>
+        <br>
         <button class="btn">SUBSCRIBE</button>
       </div>
       <div class="right">
         <h3>GALLERY</h3>
+        <br>
         <div class="right-gallery">
           <img src="./images/photos/spotlight-2-370x332.jpg" />
           <img src="./images/photos/spotlight-3-370x332.jpg" />
@@ -256,11 +310,119 @@
           <img src="./images/photos/spotlight-5-370x332.jpg" />
         </div>
       </div>
+
     </footer>
+    <div class="copyright">
+      <div>© 2023 Parquetry. </div>
+      <div>All rights reserved.
+
+        Privacy Policy.</div></div>
     <script src="./main.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
-      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
-      crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.js' integrity='sha512-zcrEMlBZMN2yTZE20T1G/vheLHni8c4iJ0U5OOQNxnxRc2TDzwOHW9CKSb/RnMV0im8sS0Rf0zBmk+kNe+tlSQ==' crossorigin='anonymous'></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- gsap 主程式 -->
+    <script src="./gsap/gsap.js"></script>
+    <!-- gsap plugins，必須在 gsap 主程式之後 -->
+    <script src="./gsap/ScrollTrigger.js"></script>
+    <script>
+      // 註冊套件
+      gsap.registerPlugin(ScrollTrigger)
+
+      // 使用 timeline 當作補間動畫的容器，控制進出場的時間位置(position)
+      const tl1 = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.box',
+          start: 'top 100%',
+          end: 'bottom 100%',
+          toggleActions: 'play reverse play reverse',
+          scrub: 3
+          // markers: true
+        },
+        defaults: {
+          duration: 1,
+          ease: 'back'
+        }
+      })
+
+      tl1
+        .from('first', {
+          y: -100,
+          opacity: 0
+        })
+        .from('box', {
+          x: -1000
+        })
+        .from(
+          '.txt01',
+          {
+            opacity: 0
+          },
+          '-=0.5'
+        )
+        .from(
+          'dfgfdimg',
+          {
+            x: 1000
+          },
+          '-=0.5'
+        )
+        .from(
+          '.txt02',
+          {
+            opacity: 0
+          },
+          '-=0.5'
+        )
+        .from(
+          '.img03',
+          {
+            x: -1000
+          },
+          '-=0.5'
+        )
+        .from(
+          '.txt03',
+          {
+            opacity: 0
+          },
+          '-=0.5'
+        )
+        .from(
+          '.img04',
+          {
+            x: 1000
+          },
+          '-=0.5'
+        )
+        .from(
+          '.txt04',
+          {
+            opacity: 0
+          },
+          '-=0.5'
+        )
+    </script>
+    <script>
+      var mySwiper = new Swiper('.swiper', {
+        autoplay: true,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination'
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      })
+      
+      //如果你初始化时没有定义Swiper实例，后面也可以通过Swiper的HTML元素来获取该实例
+      new Swiper('.swiper')
+      var mySwiper = document.querySelector('.swiper').swiper
+      mySwiper.slideNext();
+      </script>
   </body>
 </html>
