@@ -12,26 +12,41 @@
     <title>Flooring Company</title>
   </head>
   <body>
+    <button onclick="toTop" id="myBtn">▲</button>
     <header>
       <ul class="nav">
         <li><img src="./images/logos/logo-default-149x46 (1).png" /></li>
-        <li>HOME</li>
-        <li>ABOUT US</li>
-        <li>PORTFOLD</li>
-        <li>BLOG</li>
-        <li>SHOP</li>
-        <li>CONTACT US</li>
-        <li>PAGES</li>
-        <li></li>
+        <li class="active" class="li">HOME</li>
+        <li class="li">ABOUT US</li>
+        <li class="li">PORTFOLD</li>
+        <li class="li">BLOG</li>
+        <li class="li">SHOP</li>
+        <li class="li">CONTACT US</li>
+        <li class="li">PAGES</li>
+        <li class="li"></li>
+      </ul>
+      <ul class="nav-sm">
+        <li><img src="./images/logos/logo-default-149x46 (1).png" /></li>
+        <li><img id="bar" src="./images/logos/menu-bar.png"></li>
       </ul>
 <!-- 
       轮播图 -->
       <div class="swiper">
         <div class="swiper-wrapper">
           
-          <div class="swiper-slide"><img src="./images/photos/slide-1-1920x850.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="./images/photos/slide-2-1920x850.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="./images/photos/slide-3-1920x850.jpg" alt=""></div>
+          <div class="swiper-slide">
+            <span>PROFESSIONALS<br> YOU CAN RELY ON</span>
+            <button class="btn">Shop Now</button>
+            <img src="./images/photos/slide-1-1920x850.jpg" alt="">
+            </div>
+          <div class="swiper-slide">
+            <span>UNIQUE AND<br>AFFORDABLE</span>
+            <button class="btn">Shop Now</button>
+            <img src="./images/photos/slide-2-1920x850.jpg" alt=""></div>
+          <div class="swiper-slide">
+            <span>HIGHEST QUILITY<br>FLOORING SOLUTION</span>
+            <button class="btn">Shop Now</button>
+            <img src="./images/photos/slide-3-1920x850.jpg" alt=""></div>
         </div>
         <div class="swiper-pagination"></div>
           <!-- 如果需要导航按钮 -->
@@ -424,5 +439,29 @@
       var mySwiper = document.querySelector('.swiper').swiper
       mySwiper.slideNext();
       </script>
+  
+      </script>
+      <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {console.log(121);
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+  function topFunction() {
+  document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  // window.scrollTo( 0, 1000 );
+  const myBtn = document.getElementById('myBtn')
+  myBtn.onclick = function toTop() {
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    })
+}
+  </script>
   </body>
 </html>
