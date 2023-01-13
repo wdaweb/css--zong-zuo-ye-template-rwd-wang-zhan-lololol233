@@ -184,7 +184,7 @@ header{
   color: var(--color-secondary);
   cursor: pointer;
   /* letter-spacing: 5px; */
-  transition: all 0.5s ease-out;
+  transition: all 0.3ss ease-out;
 }
 .box:hover h2{
   border: none;
@@ -196,9 +196,10 @@ header{
   text-align: right;
 }
 
-/* .box h2::after:hover{
+.box:hover h2::after{
   margin-left: 50px;
-} */
+  transition: all 0.2s ease-out;
+}
 
 .first-line{
   display: flex;
@@ -263,7 +264,7 @@ header{
   margin: 0 2rem;
 }
 
-@media (max-width: 576px){
+@media (max-width: 768px){
   .box-ad-all{
     height: 40rem;
     flex-wrap: wrap;
@@ -517,7 +518,7 @@ header{
   margin-bottom: 1rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .box-lastpost{
     margin-bottom: 2rem;
   }
@@ -536,13 +537,13 @@ footer{
 }
 
 footer .left{
-  width: 30%;
+  width: 33%;
   text-align: left;
   padding-right: 5rem;
 }
 
 footer .center{
-  width: 30%;
+  width: 33%;
   text-align: left;
   
 }
@@ -659,6 +660,9 @@ footer hr{
 
 /* 返回顶部 */
 #myBtn {
+  width: 4rem;
+  height: 5rem;
+  font-size: 2rem;
   display: none;
   position: fixed;
   bottom: 20px;
@@ -670,7 +674,7 @@ footer hr{
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: px;
+  border-radius: 5px;
 }
 
 #myBtn:hover {

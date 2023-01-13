@@ -71,6 +71,7 @@
     </header>
     <hr />
     <!-- what we offer -->
+
     <h3 class="title">WHAT WE OFFER</h3>
     <div class="card">
       <div class="first-line">
@@ -98,6 +99,7 @@
         </div>
       </div>
     </div>
+
     <!-- trending product -->
     <h3 class="title">TRENDING PRODUCTS</h3>
     <div class="first-line">
@@ -347,16 +349,16 @@
       // 使用 timeline 當作補間動畫的容器，控制進出場的時間位置(position)
       const tl1 = gsap.timeline({
         scrollTrigger: {
-          trigger: '.box',
+          trigger: '#move1',
           start: 'top 100%',
           end: 'bottom 100%',
           toggleActions: 'play reverse play reverse',
-          scrub: 3
+          scrub: 1
           // markers: true
         },
         defaults: {
           duration: 1,
-          ease: 'back'
+          // ease: 'back'
         }
       })
 
@@ -366,38 +368,38 @@
           opacity: 0
         })
         .from('box', {
-          x: -1000
+          x: -2000
         })
         .from(
-          '.txt01',
+          'box',
           {
             opacity: 0
           },
           '-=0.5'
         )
         .from(
-          'dfgfdimg',
+          'first-line',
           {
-            x: 1000
+            x: 2000
           },
           '-=0.5'
         )
         .from(
-          '.txt02',
+          'first-line',
           {
             opacity: 0
           },
           '-=0.5'
         )
         .from(
-          '.img03',
+          'partner',
           {
             x: -1000
           },
           '-=0.5'
         )
         .from(
-          '.txt03',
+          '.partner',
           {
             opacity: 0
           },
